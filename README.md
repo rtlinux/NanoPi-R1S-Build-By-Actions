@@ -1,4 +1,5 @@
 git clone https://github.com/openwrt/openwrt.git
+
 cd openwrt
 cp -pv ~/friendlywrt-h5/configs/config_h5 ./.config
 
