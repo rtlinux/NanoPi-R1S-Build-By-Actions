@@ -1,12 +1,16 @@
+
 git clone https://github.com/openwrt/openwrt.git
 
 cd openwrt
+
 cp -pv ~/friendlywrt-h5/configs/config_h5 ./.config
 
 make defconfig
+
 ./scripts/feeds update -a && ./scripts/feeds install -a
 
 make menuconfig
+
 make -j9 target/linux/compile
 
 find . -name "*neo-plus2.dts"
